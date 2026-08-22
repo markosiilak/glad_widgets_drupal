@@ -1,0 +1,5 @@
+glad_widgets.settings:
+  title: 'Glad Widgets'
+  description: 'Configure institution UUID, API token and widgets.'
+  route_name: glad_widgets.settings
+  parent: system.admin_config_services

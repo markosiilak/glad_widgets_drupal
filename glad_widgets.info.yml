@@ -1,0 +1,6 @@
+name: Glad Widgets
+type: module
+description: 'Lisab Gladi asutuse widgetid Drupali plokkidena, koos live-eelvaatega.'
+package: Custom
+core_version_requirement: ^10 || ^11
+configure: glad_widgets.settings

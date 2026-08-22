@@ -1,0 +1,46 @@
+glad_widgets.settings:
+  path: '/admin/config/services/glad-widgets'
+  defaults:
+    _form: '\Drupal\glad_widgets\Form\GladWidgetsSettingsForm'
+    _title: 'Glad Widgets settings'
+  requirements:
+    _permission: 'administer glad widgets'
+
+entity.glad_widget.collection:
+  path: '/admin/config/services/glad-widgets/widgets'
+  defaults:
+    _entity_list: 'glad_widget'
+    _title: 'Glad Widgets'
+  requirements:
+    _permission: 'administer glad widgets'
+
+entity.glad_widget.add_form:
+  path: '/admin/config/services/glad-widgets/widgets/add'
+  defaults:
+    _entity_form: 'glad_widget.add'
+    _title: 'Add widget'
+  requirements:
+    _permission: 'administer glad widgets'
+
+entity.glad_widget.edit_form:
+  path: '/admin/config/services/glad-widgets/widgets/{glad_widget}/edit'
+  defaults:
+    _entity_form: 'glad_widget.edit'
+    _title: 'Edit widget'
+  requirements:
+    _permission: 'administer glad widgets'
+
+entity.glad_widget.delete_form:
+  path: '/admin/config/services/glad-widgets/widgets/{glad_widget}/delete'
+  defaults:
+    _entity_form: 'glad_widget.delete'
+    _title: 'Delete widget'
+  requirements:
+    _permission: 'administer glad widgets'
+
+glad_widgets.modules_ajax:
+  path: '/admin/config/services/glad-widgets/modules-ajax'
+  defaults:
+    _controller: '\Drupal\glad_widgets\Controller\GladWidgetsController::availableModules'
+  requirements:
+    _permission: 'administer glad widgets'

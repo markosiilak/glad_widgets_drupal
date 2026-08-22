@@ -1,0 +1,42 @@
+glad_widgets.settings:
+  type: config_object
+  label: 'Glad Widgets settings'
+  mapping:
+    institution_uuid:
+      type: string
+      label: 'Institution UUID'
+    api_token:
+      type: string
+      label: 'API token'
+    api_base_url:
+      type: string
+      label: 'API base URL'
+    widget_base_url:
+      type: string
+      label: 'Widget base URL'
+    default_height:
+      type: integer
+      label: 'Default height'
+
+glad_widgets.glad_widget.*:
+  type: config_entity
+  label: 'Glad Widget'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: label
+      label: 'Name'
+    module:
+      type: string
+      label: 'Module (sub-page)'
+    height:
+      type: integer
+      label: 'Height'
+    status:
+      type: boolean
+      label: 'Active'
+    weight:
+      type: integer
+      label: 'Weight'

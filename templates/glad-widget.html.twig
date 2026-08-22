@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Renders a single Glad widget iframe.
+ *
+ * Available variables:
+ * - widget_url: full iframe src URL.
+ * - widget_height: iframe height in pixels.
+ * - widget_name: human readable widget name, used as iframe title.
+ */
+#}
+<div class="glad-widget">
+  <iframe
+    src="{{ widget_url }}"
+    width="100%"
+    height="{{ widget_height }}"
+    frameborder="0"
+    loading="lazy"
+    title="{{ widget_name }}"
+  ></iframe>
+</div>

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations for the Glad Widgets module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function glad_widgets_theme($existing, $type, $theme, $path) {
+  return [
+    'glad_widget' => [
+      'variables' => [
+        'widget_url' => '',
+        'widget_height' => 600,
+        'widget_name' => '',
+      ],
+      'template' => 'glad-widget',
+    ],
+  ];
+}

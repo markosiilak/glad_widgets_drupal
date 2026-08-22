@@ -1,0 +1,4 @@
+administer glad widgets:
+  title: 'Administer Glad Widgets'
+  description: 'Configure institution UUID, API token and manage widgets.'
+  restrict access: true

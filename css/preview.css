@@ -1,0 +1,11 @@
+#glad-widgets-preview-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+#glad-widgets-preview-iframe {
+  display: block;
+  border: 0;
+}
