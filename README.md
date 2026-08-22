@@ -6,7 +6,7 @@ seadistuslehel.
 
 ## Nõuded
 
-- Drupal 10 või 11
+- Drupal 9.4+, 10 või 11
 - Asutuse UUID ja (valikuline) API token Glad süsteemist
 
 ## Paigaldamine
