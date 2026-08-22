@@ -4,12 +4,22 @@ Drupali moodul, mis lisab asutuse Glad widgetid (toitlustamine, päevik,
 õpilased, tunniplaan jne) Drupali plokkidena, koos live-eelvaatega
 seadistuslehel.
 
+Repo: https://github.com/markosiilak/glad_widgets
+
 ## Nõuded
 
 - Drupal 9.4+, 10 või 11
 - Asutuse UUID ja (valikuline) API token Glad süsteemist
 
 ## Paigaldamine
+
+Kloonimine otse `web/modules/custom/` alla:
+
+```bash
+git clone https://github.com/markosiilak/glad_widgets.git web/modules/custom/glad_widgets
+```
+
+Seejärel luba moodul:
 
 ```bash
 drush pm:enable glad_widgets -y
