@@ -73,4 +73,35 @@
     }
   };
 
+  Drupal.behaviors.gladWidgetsAutoLabel = {
+    attach: function (context) {
+      once('glad-widgets-auto-label', '[data-preview-field="sub_page"]', context).forEach(function (moduleSelect) {
+        var labelField = moduleSelect.closest('form').querySelector('[data-drupal-selector="edit-label"]');
+        if (!labelField) {
+          return;
+        }
+
+        // Only auto-fill while the label still matches our own last
+        // suggestion (or is empty) -- a manual edit turns this off.
+        labelField.addEventListener('input', function () {
+          if (labelField.value !== labelField.dataset.autoFilled) {
+            delete labelField.dataset.autoFilled;
+          }
+        });
+
+        moduleSelect.addEventListener('change', function () {
+          var isUntouched = labelField.value === '' || labelField.value === labelField.dataset.autoFilled;
+          if (!isUntouched) {
+            return;
+          }
+          var selectedText = moduleSelect.options[moduleSelect.selectedIndex]
+            ? moduleSelect.options[moduleSelect.selectedIndex].text
+            : '';
+          labelField.value = selectedText;
+          labelField.dataset.autoFilled = selectedText;
+        });
+      });
+    }
+  };
+
 })(Drupal, once);

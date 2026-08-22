@@ -58,7 +58,7 @@ Iga widget koosneb väljadest:
 
 | Väli | Kirjeldus |
 |------|-----------|
-| Nimetus | Sisemine nimi (nt "Toitlustamine") |
+| Nimetus | Sisemine nimi (nt "Toitlustamine"). Mooduli valimisel täidetakse automaatselt API mooduli sildiga, aga jääb käsitsi muudetavaks |
 | Moodul | Valik API-st laetud lubatud moodulite seast (nt `catering`) |
 | Kõrgus | Iframe'i kõrgus pikslites, ülekirjutab vaikimisi väärtuse |
 | Aktiivne | Kas widget kuvatakse plokis |
