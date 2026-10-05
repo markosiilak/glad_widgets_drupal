@@ -4,7 +4,7 @@ Drupali moodul, mis lisab asutuse Glad widgetid (toitlustamine, päevik,
 õpilased, tunniplaan jne) Drupali plokkidena, koos live-eelvaatega
 seadistuslehel.
 
-Repo: https://github.com/markosiilak/glad_widgets
+Repo: https://github.com/markosiilak/glad_widgets_drupal
 
 ## Nõuded
 
