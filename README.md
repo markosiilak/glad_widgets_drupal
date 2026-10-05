@@ -16,7 +16,7 @@ Repo: https://github.com/markosiilak/glad_widgets_drupal
 Kloonimine otse `web/modules/custom/` alla:
 
 ```bash
-git clone https://github.com/markosiilak/glad_widgets.git web/modules/custom/glad_widgets
+git clone https://github.com/markosiilak/glad_widgets_drupal.git web/modules/custom/glad_widgets
 ```
 
 Seejärel luba moodul:
